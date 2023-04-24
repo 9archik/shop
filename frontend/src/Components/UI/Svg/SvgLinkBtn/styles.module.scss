@@ -1,0 +1,25 @@
+.svgBtn {
+    position: relative;
+
+    .count {
+        position: absolute;
+
+        background: #ffa542;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+        width: 17px;
+        height: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #ffffff;
+        border-radius: 100%;
+        top: -8px;
+        right: -10px;
+    }
+}

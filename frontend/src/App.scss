@@ -1,0 +1,36 @@
+$gray: #EAEAEA;
+
+$darkGray: #838383;
+
+:export {
+    gray: $gray;
+    darkGray: $darkGray;
+}
+
+html, body
+{
+    background: $gray;
+    min-height:100%;
+}
+
+button, input
+{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.wrapper
+{
+    height:100%;
+    display: flex;
+}
+
+.container
+{
+   max-width:1135px;
+   width: 100%;
+   padding: 0 10px;
+   margin: 0 auto;
+}
