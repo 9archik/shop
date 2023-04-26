@@ -1,0 +1,39 @@
+.container {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: black;
+            font-weight: 700;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+
+            .authBtn {
+                padding: 10px;
+                background-color: black;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+                border-radius: 10px;
+                margin: 10px 0 0 0;
+                width: 100%;
+            }
+
+            .regBtn {
+                width: 320px;
+                color:black;
+                font-size: 20px;
+                font-weight: 700;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+}

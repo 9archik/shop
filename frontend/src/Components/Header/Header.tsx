@@ -3,7 +3,7 @@ import styles from './style.module.scss';
 import FavoriteSVG from '../UI/Svg/FavoriteSVG';
 import OrderSVG from '../UI/Svg/OrderSVG';
 import SvgLinkBtn from '../UI/Svg/SvgLinkBtn/SvgLinkBtn';
-import { useWindowDimensions } from '../Hooks/UseWindowDimensions';
+import { useWindowDimensions } from '../../Hooks/UseWindowDimensions';
 import HeaderPC from './HeaderPC/HeaderPC';
 import HeaderMobile from './HeaderMobile/HeaderMobile';
 import { toggleModalNav } from '../../store/store';
@@ -28,7 +28,11 @@ const Header: FC = () => {
 					</>
 				}
 			</Modal>
-			{width > 767 ? <HeaderPC setSectionModal={setActiveSectionModal} /> : <HeaderMobile />}
+			{width > 767 ? (
+				<HeaderPC setSectionModal={setActiveSectionModal} />
+			) : (
+				<HeaderMobile setSectionModal={setActiveSectionModal} />
+			)}
 		</>
 	);
 };
