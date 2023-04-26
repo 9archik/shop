@@ -1,0 +1,18 @@
+.container {
+    position: fixed;
+
+    width: 100%;
+    top: 0;
+    left: 150%;
+   
+    transition: 0.5s;
+    background-color: white;
+    height:100%;
+    z-index: 100;
+}
+
+.container.active
+{
+    transform: translateX(-150%);
+    display: block;
+}
