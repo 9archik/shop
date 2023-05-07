@@ -22,13 +22,13 @@ const BurgerChildren: FC<IBurgerChildrenProp> = ({ height, setSectionModal }) =>
 		<>
 			<div style={{ marginTop: height + 10 }} className={`${styles.container} container`}>
 				<div className={styles.menu}>
-					<Link to="/">
+					<Link to="/bucket">
 						{' '}
 						<OrderSVG />
 						Корзина
 					</Link>
 
-					<Link to="/">
+					<Link to="/favorite">
 						{' '}
 						<FavoriteSVG />
 						Избранное

@@ -1,0 +1,28 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .sectionName {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0 0 0;
+        color: #838383;
+    }
+    .sectionList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        justify-content: space-between;
+
+        @media (max-width: 1155px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

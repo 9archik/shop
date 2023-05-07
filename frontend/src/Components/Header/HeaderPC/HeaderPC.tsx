@@ -10,13 +10,13 @@ interface IHeaderProp {
 	setSectionModal: React.Dispatch<React.SetStateAction<string | null>>;
 }
 
-const HeaderPC: FC<IHeaderProp> = ({setSectionModal}) => {
-	const modalActive = toggleModalNav(state=> state.setState)
+const HeaderPC: FC<IHeaderProp> = ({ setSectionModal }) => {
+	const modalActive = toggleModalNav((state) => state.setState);
 
-	const handleAuthButton = (value:string) => {
-        modalActive()
-		setSectionModal(value)
-	} 
+	const handleAuthButton = (value: string) => {
+		modalActive();
+		setSectionModal(value);
+	};
 	return (
 		<header className={`container`}>
 			<div className={styles.container}>
@@ -29,20 +29,12 @@ const HeaderPC: FC<IHeaderProp> = ({setSectionModal}) => {
 					<button onClick={() => handleAuthButton('reg')} className={styles.authLink}>
 						Регистрация
 					</button>
-					<SvgLinkBtn
-						value={10}
-						onClick={() => {
-							('');
-						}}>
+					<Link to="/favorite">
 						<FavoriteSVG />
-					</SvgLinkBtn>
-					<SvgLinkBtn
-						value={10}
-						onClick={() => {
-							('');
-						}}>
+					</Link>
+					<Link to="/bucket">
 						<OrderSVG />
-					</SvgLinkBtn>
+					</Link>
 				</div>
 			</div>
 		</header>
